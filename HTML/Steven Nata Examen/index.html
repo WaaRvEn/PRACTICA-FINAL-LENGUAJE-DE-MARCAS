@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"  data-auto-a11y="true"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <title>Exámen 1ª Evaluación</title>
+</head>
+<body>
+
+    <header>
+
+        <img id="logo" src="./IMG/tu_logo.jpg" alt="Logo">
+
+        <h1>EXAMEN 1 EVALUACIÓN</h1>
+
+        <form id="form1" action="">
+            <input type="text" placeholder="Buscar">
+            <button value="submit">Buscar</button>
+        </form>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="enlaces" href="https://www.marca.com/boxeo.html" target="_blank">UFC</a></li>
+            <li><a class="enlaces" href="https://www.marca.com/boxeo.html" target="_blank">BOXEO</a></li>
+            <li><a class="enlaces" href="">AUTOR</a></li>
+            <li><a class="enlaces" href="./HTML/yo.html" target="_blank">Sobre mí</a></li>
+        </ul>
+    </nav>
+
+    <div class="partes">
+        
+        <h2>Formulario de Registro</h2>
+
+        <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+
+            <label for="nombre">Nombre completo:</label> <br>
+            <input type="text" name="nombre" class="hueco" placeholder="Ejemplo: Juan Pérez" maxlength="40">
+
+            <br><br>
+
+            <label for="email">Correo Electrónico:</label> <br>
+            <input type="text" name="email" class="hueco" placeholder="Ejemplo: correo@ejemplo.com" maxlength="40">
+
+            <br><br>
+
+            <label for="psw">Contraseña</label> <br>
+            <input type="password" name="psw" class="hueco" placeholder="Mínimo 8 caracteres">
+
+            <br><br>
+
+            <label for="genero">Género:</label> <br>
+
+            <input type="radio" name="genero">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" name="genero">
+            <label for="femenino" name="Femenino">Femenino</label>
+
+            <input type="radio" name="genero">
+            <label for="otro">Otro</label> 
+
+            <br><br>
+
+            <label for="intereses">Intereses:</label> <br>
+
+            <input type="checkbox" name="intereses">
+            <label for="intereses">UHC</label>
+
+            <input type="checkbox" name="intereses">
+            <label for="intereses" aria-selected="true">Boxeo</label>
+
+            <input type="checkbox" name="intereses">
+            <label for="intereses">Thai</label>
+
+            <br><br>
+
+            <label for="comentarios">Comentarios:</label> <br>
+            <textarea name="comentarios" id="" cols="50" rows="0" placeholder="Escribe tus comentarios aquí"></textarea>
+
+            <br><br>
+
+            <button value="submit" class="hueco">Registrarse</button> <br>
+            <button value="submit" class="hueco">Limpiar</button>
+        </form>
+
+    </div>
+
+    <div class="partes">
+
+        <h2>Próximas</h2>
+
+        <table>
+            <tr>
+                <th colspan="5" class="filas1">Próximas peleas</th>
+            </tr>
+
+            <tr>
+                <th class="filas1">Nombre</th>
+                <th class="filas1">Edad</th>
+                <th class="filas1">Peso</th>
+                <th class="filas1">Pelea</th>
+                <th class="filas1">País</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="filas2">Conor McGregor</td>
+                <td rowspan="2" class="filas2">33</td>
+                <td class="filas2">150lbs</td>
+                <td class="filas2">Texas</td>
+                <td class="filas2">Irlanda</td>
+            </tr>
+
+            <tr>
+                <td class="filas2">155 lbs</td>
+                <td class="filas2">Londres</td>
+                <td class="filas2">Irlanda</td>
+            </tr>
+                
+            <tr>
+                <td class="filas2">Amanda Nunes</td>
+                <td class="filas2">33</td>
+                <td class="filas2">145lbs</td>
+                <td class="filas2">Rio</td>
+                <td class="filas2">Brasil</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="filas2">Khabib Nurmagomedov</td>
+                <td rowspan="2" class="filas2">32</td>
+                <td class="filas2">160lbs</td>
+                <td class="filas2">Mouscú</td>
+                <td class="filas2">Rusia</td>
+            </tr>
+
+            <tr>
+                <td class="filas2">155lbs</td>
+                <td class="filas2">Londres</td>
+                <td class="filas2">Rusia</td>
+            </tr>
+
+            <tr>
+                <td class="filas2">Rose Namajunas</td>
+                <td class="filas2">29</td>
+                <td class="filas2">155lbs</td>
+                <td class="filas2">Texas</td>
+                <td class="filas2">Estados Unidos</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="partes">
+        <h2>La velada</h2>
+        <iframe width="470" height="300" src="https://www.youtube.com/embed/1iNnoxMLw2o?si=TiOLp8sukXjU2URK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+
+        <div id="copy">
+            <p><i>&#169;</i> Todos los derechos reservados</p>
+        </div>
+        
+        <div id="redes">
+            <p>Siguenos en redes sociales <br> ---------------------------- </p>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+        </div>
+
+        <div id="web">
+            <p>Web realizada por Steven Nata</p>
+        </div>
+    </footer>
+</body>
+</html>
