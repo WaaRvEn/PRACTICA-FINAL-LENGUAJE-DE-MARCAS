@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE uno [
+ <!ELEMENT uno (jugadores, mazo, turno+)>
+  <!ELEMENT jugadores (jugador+)>
+  <!ELEMENT jugador (nombre, mano)>
+  <!ATTLIST jugador id NMTOKEN #REQUIRED>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT mano (carta+)>
+  <!ELEMENT carta EMPTY>
+  <!ATTLIST carta color (rojo|verde|azul|amarillo) #REQUIRED>
+  <!ATTLIST carta numero CDATA #REQUIRED>
+  <!ATTLIST carta tipo (normal|especial) #REQUIRED>
+  <!ELEMENT mazo (cartas)>
+  <!ELEMENT cartas (carta+)>
+  <!ELEMENT turno (jugada*)>
+  <!ELEMENT jugada (jugador_jugada, carta_jugada)>
+  <!ELEMENT jugador_jugada  EMPTY>
+  <!ATTLIST jugador_jugada idref NMTOKEN #REQUIRED>
+  <!ELEMENT carta_jugada EMPTY>
+  <!ATTLIST carta_jugada idref ID #REQUIRED>
+]>
+
+<uno>
+  <jugadores>
+    <jugador id="1">
+      <nombre>Alice</nombre>
+      <mano>
+        <carta color="rojo" numero="5" tipo="normal" />
+        <carta color="verde" numero="8" tipo="normal" />
+      </mano>
+    </jugador>
+    <jugador id="2">
+      <nombre>Bob</nombre>
+      <mano>
+        <carta color="azul" numero="2" tipo="normal" />
+        <carta color="amarillo" numero="skip" tipo="especial" />
+      </mano>
+    </jugador>
+  </jugadores>
+  <mazo>
+    <cartas>
+      <carta color="rojo" numero="3" tipo="normal" />
+      <carta color="verde" numero="7" tipo="normal" />
+      <!-- ... otras cartas ... -->
+    </cartas>
+  </mazo>
+  <turno>
+    <jugada>
+      <jugador_jugada idref="1" />
+      <carta_jugada idref="carta1" />
+    </jugada>
+    <!-- ... otras jugadas ... -->
+  </turno>
+</uno>
