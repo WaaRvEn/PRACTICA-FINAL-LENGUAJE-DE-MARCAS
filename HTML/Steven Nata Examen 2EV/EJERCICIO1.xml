@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<equipo>
+  <nombre>Real Madrid</nombre>
+  <fundacion año="1990">1902</fundacion>
+  <entrenador>Carlo</entrenador>
+  <liga>
+    <temporada año="2023-2024">
+      <posicion>1</posicion>
+      <puntos>87</puntos>
+    </temporada>
+    <temporada año="2020-2021">
+      <posicion>2</posicion>
+      <puntos>76</puntos>
+    </temporada>
+  </liga>
+  <jugadores>
+    <jugador>
+      <nombre>Jude</nombre>
+      <posicion>Centrocampista</posicion>
+    </jugador>
+    <jugador>
+      <nombre>Brahim</nombre>
+      <posicion>Delantero</posicion>
+    </jugador>
+  </jugadores>
+</equipo>
