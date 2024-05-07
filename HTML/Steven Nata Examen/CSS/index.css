@@ -1,0 +1,129 @@
+body{
+    background-image: url(../IMG/fondo.jpg);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+    position: fixed;
+    background-color:#333;
+    height: 10%;
+    width: 99%;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    border-radius: 10px;
+}
+
+#logo{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    width: 20%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+#form1{
+    position: absolute;
+    right: 60px;
+    top: 45px;
+}
+
+ul {
+    float: left;
+    width: 10%;
+    list-style-type: none;
+    position: relative;
+    top:100px;
+    display: inline;
+}
+  
+li {
+    position: fixed;
+    display: inline;
+    background-color: rgb(100, 79, 79);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 3px black;
+}
+
+li a:hover{
+    background-color: darksalmon;
+}
+
+.partes{
+    float: left;
+    width: 300px;
+    margin-top: 100px;
+    margin-right:10px;
+    background-color: #f0eded;
+    text-align: center;
+}
+
+.hueco{
+    width: 70%;
+}
+
+table, th, td{
+    border: solid gainsboro 1px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.filas1{
+    background-color: #333;
+    color: white;
+}
+
+.filas2{
+    background-color: #f0eded;
+}
+
+footer{
+    background-color: #333;
+    position: fixed;
+    bottom: 1px;
+    height: 15%;
+    width: 99%;
+}
+
+#copy{
+    float: left;
+    color: white;
+    margin-right: 30%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#redes{
+    color: white;
+    float: left;
+    margin-right: 30%;
+}
+
+#web{
+    color: white;
+    float: left;
+    margin-top: 10px;
+}
+
+#nombre{
+    position: absolute;
+    top: 400px;
+    width: 99%;
+    text-align: center;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+}
+
+#volver{
+    position: relative;
+    top: 850px;
+}
+
+
