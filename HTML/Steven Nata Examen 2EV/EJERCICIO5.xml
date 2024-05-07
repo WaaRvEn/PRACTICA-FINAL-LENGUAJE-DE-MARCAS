@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<veladas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio5.xsd">
+  <velada>
+    <fecha>2024-02-14</fecha>
+    <ubicacion>Madrid</ubicacion>
+    <combates>
+      <combate>
+        <boxeador1>Pepe</boxeador1>
+        <boxeador2>Juan</boxeador2>
+        <resultado>Ganador Juan</resultado>
+      </combate>
+      <combate>
+        <boxeador1>Manolo</boxeador1>
+        <boxeador2>Gustabo</boxeador2>
+        <resultado>Gustabo</resultado>
+      </combate>
+    </combates>
+  </velada>
+</veladas>
