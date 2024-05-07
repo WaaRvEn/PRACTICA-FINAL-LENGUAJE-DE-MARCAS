@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE escalada [
+  <!ELEMENT escalada (rutas, escaladores)>
+  <!ELEMENT rutas (ruta*)>
+  <!ELEMENT ruta (nombre, dificultad, longitud)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT dificultad (#PCDATA)>
+  <!ELEMENT longitud (#PCDATA)>
+  <!ELEMENT escaladores (escalador*)>
+  <!ELEMENT escalador (nombre_escalador, edad)>
+  <!ELEMENT nombre_escalador (#PCDATA)>
+  <!ELEMENT edad (#PCDATA)>
+]>
+
+<escalada>
+  <rutas>
+    <ruta>
+      <nombre>El Capitan</nombre>
+      <dificultad>Avanzada</dificultad>
+      <longitud>900 metros</longitud>
+    </ruta>
+  </rutas>
+  <escaladores>
+    <escalador>
+      <nombre_escalador>Alice</nombre_escalador>
+      <edad>28</edad>
+    </escalador>
+  </escaladores>
+</escalada>
