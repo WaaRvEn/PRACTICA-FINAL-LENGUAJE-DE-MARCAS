@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JS</title>
+</head>
+<body>
+    <h1>Ejercicio1</h1>
+    <div id="ejercicio1">
+        <!-- SPAN Nombre y apellidos-->
+    </div>
+    <h1>Ejercicio2</h1>
+    <div id="ejercicio2">
+        <!-- lista ordenada con 3 elementos (Html, CSS y JS)-->
+    </div>
+    
+    <h1>Ejercicio3</h1>
+    <div id="ejercicio3">
+        Segunda evaluación <br>
+        <b>XML</b> <br>
+        <b>JSON</b><br>
+        <b>XSD</b> <br>
+        <b>XSD</b> <br>
+        <b>Javascript</b> <br>
+        <b>DTD</b> <br>
+    </div>
+
+    
+    <h1>Ejercicio4</h1>
+    <div id="ejercicio4">
+        <span>Saludar</span><input id="saludar" type="text" size="2">
+        
+        <button type="button" onclick="ejercicio4()">crear</button>
+         <!--<p>HOLA XXXX</p>-->
+    </div>
+
+    
+    <h1>Ejercicio5</h1>
+    <div id="ejercicio5">
+        <span>Color</span> <input id="color" type="text" >
+        <span>Color de fondo</span> <input id="bg_color" type="text" > 
+        <span>Cambiar el color de este texto</span>
+
+        <button type="button" onclick="ejercicio5()">cambiar</button>
+        
+    </div>
+
+    
+    <h1>Ejercicio6</h1>
+    <div id="ejercicio6">
+        <span>Primera evaluación</span> <input id="1eva" type="text" size="2">
+        <span>Segunda evaluación</span> <input id="2eva" type="text" size="2">
+        <span>Tercera evaluación</span> <input id="3eva" type="text" size="2">
+
+        <button type="button" onclick="ejercicio6()">calcular</button>
+        <!--<p>Media: XXXX</p>-->
+    </div>
+    
+    <h1>Ejercicio7</h1>
+    <div id="ejercicio7">
+        <span>Cantidad</span> <input id="cantidad" type="text" size="2">
+        <span>Texto</span> <input id="texto" type="text" size="2">
+
+        <button type="button" onclick="ejercicio7()">calcular</button>
+
+    </div>
+
+    <script>
+        /* MODIFICAR EL JS PARA QUE SE EJECUTEN automáticamente LAS 3 primeras funciones */
+        /* MODIFICAR EL HTML PARA QUE INCLUYA LOS BOTONES PARA LLAMAR A LOS 4 últimos EJERCICIOS */
+
+        function ejercicio1(){
+            //Cargar en un span con tu nombre y apellidos  (1p)
+
+            let nombre = document.createElement("span");
+            nombre.innerHTML="Steven Nata Zumbana"
+            document.getElementById("ejercicio1").appendChild(nombre);
+        }
+
+        ejercicio1();
+
+        function ejercicio2(){
+            //Cargar en una lista ordenada esos items  (1,5p)
+
+            let lista = document.createElement("ol");
+
+            let lista1 = document.createElement("li");
+
+            lista1.innerHTML="Html";
+
+            let lista2 = document.createElement("li");
+
+            lista2.innerHTML="CSS";
+
+            let lista3 = document.createElement("li");
+
+            lista3.innerHTML="JS";
+
+            lista.appendChild(lista1);
+            lista.appendChild(lista2);
+            lista.appendChild(lista3);
+
+            document.getElementById("ejercicio2").appendChild(lista);
+
+        }
+
+        ejercicio2();
+
+        function ejercicio3(){
+            // Elimina el b que pone javascript   (0,5p)
+
+            let padre = document.getElementById("ejercicio3");
+
+            let borrar = document.getElementsByTagName("b")[4];
+
+            padre.removeChild(borrar);
+            
+        }
+
+        ejercicio3();
+
+        function ejercicio4(){
+            // Añadir un elemento con el saludo (1p)
+
+            let elemento = document.createElement("p");
+
+            let saludo = document.getElementById("saludar");
+
+            elemento.innerHTML = "Hola "+ saludar.value;
+
+            document.getElementById("ejercicio4").appendChild(elemento);
+
+        }
+        function ejercicio5(){ 
+            //  Cambiar el color por el introducido en los campos (1p)
+
+            let color = document.getElementById("color");
+
+            let colorfondo = document.getElementById("bg_color");
+
+            let texto = document.getElementsByTagName("span")[4];
+
+            texto.style.color= color.value;
+
+            texto.style.backgroundColor= bg_color.value;
+
+            
+        }
+        function ejercicio6(){  
+            // Calcular la media siempre que las 3 notas sean superiores a 4
+            // Si alguna es menor de 4 pondrá SUSPENSO (2,5p)
+
+            let notafinal = document.createElement("p");
+            
+            let nota1 = Number(document.getElementById("1eva").value);
+
+            let nota2 = Number(document.getElementById("2eva").value);
+
+            let nota3 = Number(document.getElementById("3eva").value);
+
+            notafinal.innerHTML=(nota1+nota2+nota3)/3;
+
+            let notasuspensa = document.createElement("p");
+
+            notasuspensa.innerHTML="SUSPENSO";
+
+            if(nota1>4 && nota2>4 && nota3>4){
+
+            document.getElementById("ejercicio6").appendChild(notafinal);
+
+            }
+
+            else if(nota1<4 && nota2<4 && nota3<4){
+                
+            document.getElementById("ejercicio6").appendChild(notasuspensa);
+
+            }
+
+        }
+
+        function ejercicio7(){  
+            // Inserta tantas veces como diga la cantidad un div con el texto pedido (2,5p)
+
+            let cantidad = Number(document.getElementById("cantidad").value);
+
+            let oracion = document.getElementById("texto");
+
+            let poner = document.createElement("div").id="final";
+
+            let objeto = document.createElement("p");
+
+            document.getElementById("ejercicio7").appendChild(poner);
+            
+        }
+
+    </script>
+    
+</body>
+</html>
