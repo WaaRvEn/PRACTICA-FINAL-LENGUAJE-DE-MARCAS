@@ -24,3 +24,8 @@ td{
   color: blanchedalmond;
   padding: 10px;
 }
+
+footer{
+    position: fixed;
+    bottom: 1px;
+}
