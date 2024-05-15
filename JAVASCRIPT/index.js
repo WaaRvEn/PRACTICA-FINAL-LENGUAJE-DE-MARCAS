@@ -22,5 +22,26 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 
-// STEVEN NATA
+// STEVEN NATA QesQ
 
+function desaparece(k){
+  document.getElementById(k).style.display="none";
+
+}
+
+function elige(){
+
+  var imagenes=[
+      '../IMG/Ant-Man.webp',
+      '../IMG/Iron-Man.png',
+      '../IMG/Spider-Man.png',
+      '../IMG/Bruja-Escarlata.png',
+      '../IMG/Vision.png',
+      '../IMG/Cráneo-Rojo.png',
+      '../IMG/Capitan-America.webp',
+      '../IMG/Dr-Strange.webp',
+      '../IMG/Carnage.webp'];
+
+  document.getElementById("tetoca").src = 
+  imagenes[Math.floor(Math.random() * imagenes.length)];
+}
