@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"></script> 
+    <link rel="stylesheet" href="../CSS/QesQ.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">  
+    <script src="../JAVASCRIPT/index.js"></script> 
     <title>PRÁCTICA FINAL DE LENGUAJE DE MARCAS</title>
 </head>
 <body>
@@ -28,7 +31,7 @@
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
         <i class="fa fa-remove"></i>
         </a>
-        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <h4 class="w3-bar-item"><b>Steven Nata</b></h4>
         <a class="w3-bar-item w3-button w3-hover-gray" href="./HTML/Steven Nata Examen/index.html" target="_blank">EXAMEN 1ª EVALUACIÓN</a>
         <a class="w3-bar-item w3-button w3-hover-gray" href="./HTML/Steven Nata Examen 2EV/" target="_blank">EXAMEN 2ª EVALUACION</a>
         <a class="w3-bar-item w3-button w3-hover-gray" href="./HTML/Steven Nata Examen 3EV/StevenNata_3EV_examen.html" target="_blank">EXAMEN 3ª EVALUACION</a>
@@ -49,8 +52,57 @@
         <div class="w3-row">
             <div class="w3-twothird w3-container">
             <h2 class="w3-text-teal">TERCERA EVALUACIÓN</h2>
-            <p></p>
             </div>
+        </div>
+        <div id="QesQ" onload="elige()">
+
+            <table>
+                <tr>
+                    <th id="tabla" colspan="3">MARVEL</th>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <img id="a1" src="../IMG/Ant-Man.webp" alt="Ant-man" onclick="desaparece('a1')">
+                            
+                    </td>
+                    <td>
+                            
+                        <img id="a2" src="../IMG/Iron-Man.png" alt="Iron-man" onclick="desaparece('a2')">
+                            
+                    </td>
+                    <td>
+                        <img id="a3"src="../IMG/Spider-Man.png" alt="Spider-man" onclick="desaparece('a3')">
+                    </td>
+                <tr>
+                    <td>
+                        <img id="a4"src="../IMG/Bruja-Escarlata.png" alt="Bruja escarlata" onclick="desaparece('a4')">
+                    </td>
+                    <td>
+                        <img id="a5" src="../IMG/Vision.png" alt="Visión" onclick="desaparece('a5')">
+                    </td>
+                    <td>
+                        <img id="a6" src="../IMG/Cráneo-Rojo.png" alt="Cráneo rojo" onclick="desaparece('a6')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="a7" src="../IMG/Capitan-America.webp" alt="Capitán América" onclick="desaparece('a7')">
+                    </td>
+                    <td>
+                        <img id="a8" src="../IMG/Dr-Strange.webp" alt="Doctor Strange" onclick="desaparece('a8')">
+                    </td>
+                    <td>
+                        <img id="a9"src="../IMG/Carnage.webp" alt="Carnage" onclick="desaparece('a9')">
+                    </td>
+                </tr>
+                    
+            </table>
+    
+            <p id="txt">Te ha tocado:</p>
+    
+            <img id="tetoca" src="imagenes" style="display: block; margin: 0 auto; width: 150px; padding:20px; background-color: rgba(255, 255, 255, 0.604); border:solid; border-color:black; border-style:dashed; border-width: 10px;"/>
+    
         </div>
     
         <!-- Pagination -->
