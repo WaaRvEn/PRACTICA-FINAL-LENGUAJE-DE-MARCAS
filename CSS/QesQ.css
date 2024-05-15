@@ -1,0 +1,48 @@
+#QesQ{
+    background-image: url("../IMG/Fondo_Marvel.jpg");
+}
+
+table, th, td{
+    background-color: rgba(0, 0, 0, 0.57);
+    border:solid;
+    border-collapse: collapse;
+    border-color: black;
+    margin:0 auto;
+               
+}
+
+th, td{
+    
+    text-align: center;
+    width: 300px;
+    height: 270px; 
+    
+}
+
+img{
+    height: auto;
+    width: 200px;
+}
+
+#tabla{
+    color:rgb(255, 0, 0);
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+}
+
+#uno{
+    
+    color:white;
+}
+
+#txt{
+    
+    background-color: rgba(255, 255, 255, 0.796);
+    text-align:center;
+    border-style: inset;
+    border-radius: 5px;
+    margin:20px 300px;
+    color:black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
