@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Quién es quién?</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">  
+    <style>
+
+        body{
+            background-image: url("https://www.todofondos.net/wp-content/uploads/marvel-comics-wallpaper-4k-fondo-de-pantalla-hd-y-descarga-de-fondo.jpg");
+        }
+
+        table, th, td{
+            background-color: rgba(0, 0, 0, 0.57);
+            border:solid;
+            border-collapse: collapse;
+            border-color: black;
+            margin:0 auto;
+                       
+        }
+
+        th, td{
+            
+            text-align: center;
+            width: 300px;
+            height: 270px; 
+            
+        }
+
+        img{
+            height: auto;
+            width: 200px;
+        }
+        #tabla{
+            color:rgb(255, 0, 0);
+            font-family: 'Anton', sans-serif;
+            font-size: 70px;
+        }
+        #uno{
+            
+            color:white;
+        }
+        #txt{
+            
+            background-color: rgba(255, 255, 255, 0.796);
+            text-align:center;
+            border-style: inset;
+            border-radius: 5px;
+            margin:20px 300px;
+            color:black;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px;
+        }
+
+    </style>
+
+    </head>
+
+    <body onload="elige()">
+		
+        <table>
+            <tr>
+                <th id="tabla" colspan="3">MARVEL</th>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <img id="a1" src="../IMG/Ant-Man.webp" alt="Ant-man" onclick="desaparece('a1')">
+                        
+                </td>
+                <td>
+                        
+                    <img id="a2" src="../IMG/Iron-Man.png" alt="Iron-man" onclick="desaparece('a2')">
+                        
+                </td>
+                <td>
+                    <img id="a3"src="../IMG/Spider-Man.png" alt="Spider-man" onclick="desaparece('a3')">
+                </td>
+            <tr>
+                <td>
+                    <img id="a4"src="../IMG/Bruja-Escarlata.png" alt="Bruja escarlata" onclick="desaparece('a4')">
+                </td>
+                <td>
+                    <img id="a5" src="../IMG/Vision.png" alt="Visión" onclick="desaparece('a5')">
+                </td>
+                <td>
+                    <img id="a6" src="../IMG/Cráneo-Rojo.png" alt="Cráneo rojo" onclick="desaparece('a6')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="a7" src="../IMG/Capitan-America.webp" alt="Capitán América" onclick="desaparece('a7')">
+                </td>
+                <td>
+                    <img id="a8" src="../IMG/Dr-Strange.webp" alt="Doctor Strange" onclick="desaparece('a8')">
+                </td>
+                <td>
+                    <img id="a9"src="../IMG/Carnage.webp" alt="Carnage" onclick="desaparece('a9')">
+                </td>
+            </tr>
+                
+        </table>
+
+        <p id="txt">Te ha tocado:</p>
+
+        <img id="tetoca" src="imagenes" style="display: block; margin: 0 auto; width: 150px; padding:20px; background-color: rgba(255, 255, 255, 0.604); border:solid; border-color:black; border-style:dashed; border-width: 10px;"/>
+
+        <script>
+            function desaparece(k){
+                document.getElementById(k).style.display="none";
+ 
+            }
+
+            function elige(){
+
+                var imagenes=[
+                    
+                '../IMG/Ant-Man.webp',
+                '../IMG/Iron-Man.png',
+                '../IMG/Spider-Man.png',
+                '../IMG/Bruja-Escarlata.png',
+                '../IMG/Vision.png',
+                '../IMG/Cráneo-Rojo.png',
+                '../IMG/Capitan-America.webp',
+                '../IMG/Dr-Strange.webp',
+                '../IMG/Carnage.webp'];
+
+                document.getElementById("tetoca").src = 
+                imagenes[Math.floor(Math.random() * imagenes.length)];
+            } 
+
+        </script>
+
+    </body>
+</html>
