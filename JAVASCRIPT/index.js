@@ -22,7 +22,19 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 
-// STEVEN NATA QesQ
+// STEVEN NATA
+
+function añadir(){
+
+  let elemento = document.createElement("p");
+
+  let nombre = document.getElementById("form");
+
+  elemento.innerHTML = "<br> Bienvenido "+ form.value +". Estas son las reglas: <br> <br> Cada jugador elige un personaje misterioso, y luego haciendo preguntas que tengan como respuesta sí o no, intenta adivinar el personaje misterioso del otro jugador. Cuando piensa que saben quién es el personaje misterioso de su adversario, el jugador puede intentar adivinarlo." ;
+
+  document.getElementById("nombre").appendChild(elemento);
+
+}
 
 function desaparece(k){
   document.getElementById(k).style.display="none";
