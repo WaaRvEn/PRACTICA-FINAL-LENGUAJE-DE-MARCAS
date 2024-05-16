@@ -1,3 +1,7 @@
+body{
+    background-color: rgba(179, 177, 34, 0.575);
+}
+
 #titulo {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
